@@ -1,4 +1,4 @@
-export default function SelectionStore() {
+export default const SelectionStore = (function SelectionStore() {
   let saved = null;
   return {
     // 失去焦点时保存选取
@@ -27,4 +27,4 @@ export default function SelectionStore() {
       }
     }
   };
-}
+})()
